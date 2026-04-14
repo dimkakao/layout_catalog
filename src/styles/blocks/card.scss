@@ -24,6 +24,8 @@
     line-height: 18px;
     color: vars.$main-color;
     margin-bottom: 4px;
+
+    transition: color 300ms;
   }
 
   &__product-code {
@@ -60,6 +62,10 @@
     background-color: vars.$blue-accent;
     border: none;
     border-radius: vars.$border-radius;
+
+    transition:
+      background-color 300ms,
+      color 300ms;
 
     &:hover {
       background-color: vars.$white;

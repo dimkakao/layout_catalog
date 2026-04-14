@@ -23,10 +23,13 @@
     --column-number: 4;
   }
 
-  transition-duration: 300ms;
+  &__card {
+    transition: transform 300ms;
+  }
 
   &__card:hover {
     transform: scale(1.2);
+    z-index: 1;
     .card__title {
       color: vars.$card-title-color;
     }
